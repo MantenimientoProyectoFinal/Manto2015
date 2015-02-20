@@ -8,7 +8,7 @@
   }
   
   .HipervinculoAdmon:hover{
-    color:#006666;
+    color: red;
 	text-decoration:underline;
   }
 </style>

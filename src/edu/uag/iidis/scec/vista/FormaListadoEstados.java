@@ -21,7 +21,7 @@ public final class FormaListadoEstados
     private int contador;
 
 
-    public void setEstados(Collection estados) {
+    public void setEstados(Collection estados){
         this.estados = estados;
         if (estados != null) {
           this.contador = estados.size();

@@ -7,7 +7,7 @@
            dynamic-insert="false">
 
         <id name="id"
-            column="idEstado"
+            column="idestado"
             type="java.lang.Long"
             unsaved-value="null" >
             <generator class="increment">

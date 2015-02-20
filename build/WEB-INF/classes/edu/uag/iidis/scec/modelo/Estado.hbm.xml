@@ -7,20 +7,24 @@
            dynamic-insert="false">
 
         <id name="id"
-            column="idEstado"
+            column="idestado"
             type="java.lang.Long"
             unsaved-value="null" >
             <generator class="increment">
             </generator>
         </id>
 
-        <property name="nombre"
+        <property name="estado"
+            type="java.lang.String"
+            not-null="true"
+            unique="true" />
+			
+		<property name="pais"
             type="java.lang.String"
             not-null="true"
             unique="true" />
 
-        <property name="descripcion"
-            type="java.lang.String" />
+        
 
     </class>
 
