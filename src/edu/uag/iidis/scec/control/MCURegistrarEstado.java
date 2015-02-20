@@ -64,8 +64,7 @@ public final class MCURegistrarEstado
         // Se obtienen los datos para procesar el registro
         FormaNuevoEstado forma = (FormaNuevoEstado)form;
 
-        Estado rol = new Estado(forma.getNombre(),
-                          forma.getDescripcion());
+        Estado rol = new Estado(forma.getEstado(), forma.getPais());
 
         ManejadorEstados mr = new ManejadorEstados();
         int resultado = mr.crearEstado(rol);
@@ -78,7 +77,7 @@ public final class MCURegistrarEstado
             case 1:
                 errores.add(ActionMessages.GLOBAL_MESSAGE,
                             new ActionMessage("errors.nombreEstadoYaExiste",
-                                               forma.getNombre()));                
+                                               forma.getEstado()));                
                 saveErrors(request, errores);
                 return (mapping.getInputForward());
 

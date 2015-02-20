@@ -20,10 +20,10 @@
 -->
 </script>
     <br>
-    <font size='5'><fmt:message key="formaListadoRoles.titulo" /></font>
+    <font size='10'><fmt:message key="formaListadoRoles.titulo" /></font>
     <div class="table" style="width:100%" >
         <div class="tr">
-            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px;">
+            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px; font-size:18px;">
                 <a href="solicitarRegistroRol.do" class="HipervinculoAdmon boton">Agregar nuevo rol...</a>
             </div>
         </div>
@@ -32,23 +32,23 @@
                <html:errors />
             </div>
         </div>
-        <div class="tr" style="background:#CCCCCC">
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoRoles.etiqueta.nombre" /></b></div>
-         <div class="td" style="width:58%;border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoRoles.etiqueta.descripcion" /></b></div>
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoRoles.etiqueta.administracion" /></b></div>
+        <div class="tr" style="background: transparent; border: 0px; clear: 0; font-size: 25px;">
+         <div class="td" style="width:15%"><b><fmt:message key="formaListadoRoles.etiqueta.nombre" /></b></div>
+         <div class="td" style="width:20%;border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoRoles.etiqueta.descripcion" /></b></div>
+         <div class="td" style="width:15%"><b><fmt:message key="formaListadoRoles.etiqueta.administracion" /></b></div>
         </div>
         <c:forEach var="rol" items="${formaListadoRoles.roles}">
             <div class="tr">
-                <div class="td" align="left" style="width:20%"><c:out value="${rol.nombre}"/></div>
-                <div class="td" align="left" style="width:58%"><c:out value="${rol.descripcion}"/></div>
-                <div class="td" align="left" style="width:20%">
+                <div class="td" align="left" style="width:15%"><c:out value="${rol.nombre}"/></div>
+                <div class="td" align="left" style="width:20%"><c:out value="${rol.descripcion}"/></div>
+                <div class="td" align="left" style="width:25%">
                     <a href='solicitarModificarRol.do?id=<c:out value="${rol.id}"/>'
-					   class="HipervinculoAdmon">
+					   class="HipervinculoAdmon" style="color: green;">
                         <fmt:message key="formaListadoRoles.etiqueta.modificar" />
                     </a>
                     <a href='procesarEliminarRol.do?id=<c:out value="${rol.id}"/>'
 					   onClick="javascript: return EliminarRol('<c:out value="${rol.nombre}"/>')"
-					   class="HipervinculoAdmon">
+					   class="HipervinculoAdmon" style="color: red;">
                         <fmt:message key="formaListadoRoles.etiqueta.eliminar" />
                     </a>
                 </div>

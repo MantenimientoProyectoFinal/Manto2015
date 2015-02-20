@@ -15,26 +15,26 @@
             </div>
             <div class="tr">
                 <div class="td" align="right">
-                    <fmt:message key="formaNuevoEstado.etiqueta.nombre" />
+                    <fmt:message key="formaNuevoEstado.etiqueta.estado" />
                 </div>
                 <div class="td" align="left">
                     <input type="text" 
                            name="nombre" 
                            size="50" 
                            maxlength="100" 
-                           value="${formaNuevoEstado.nombre}" />
+                           value="${formaNuevoEstado.estado}" />
                 </div>
             </div>
             <div class="tr">
                 <div class="td" align="right">
-                    <fmt:message key="formaNuevoEstado.etiqueta.descripcion" />
+                    <fmt:message key="formaNuevoEstado.etiqueta.pais" />
                 </div>
                 <div class="td" align="left">
                     <input type="text" 
                            name="descripcion" 
                            size="50" 
                            maxlength="100" 
-                           value="${formaNuevoEstado.descripcion}" />
+                           value="${formaNuevoEstado.pais}" />
                 </div>
             </div>
             <div class="tr">

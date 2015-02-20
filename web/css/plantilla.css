@@ -96,6 +96,7 @@ body {
 a:link   
 {   
  text-decoration:none;   
+ color: black;
 }   
 .barramenu2 {
 	padding: 10px;
@@ -105,11 +106,13 @@ a:link
 	width: 700x;
 	border: 0px;
 	font-family: Haettenschweiler;
+		
 }
 .barramenu2 span {
 	border-right: 1px solid #777;
 	padding: 0 10px;
 	font-size: 47px;
+
 }
 
 .barramenu2 span:hover{
@@ -173,17 +176,20 @@ a:link
   display:table;         
   width:auto;                 
   border-spacing:5px;/*cellspacing:poor IE support for  this*/
+  
 }
 .tr{
   display:table-row;
   width:auto;
   clear:both;
+  font-size:22px;
+  font-family: David;
 }
 .td{
   float:left;/*fix for  buggy browsers*/
   display:table-column;         
   width:200px;    
- 
+  
   margin-left:10px;  
 }
 

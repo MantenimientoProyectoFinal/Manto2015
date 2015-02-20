@@ -16,31 +16,31 @@ import org.apache.struts.validator.ValidatorForm;
 public final class FormaNuevoEstado
         extends ValidatorForm {
 
-    private String nombre;
-    private String descripcion;
+    private String estado;
+    private String pais;
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
-    public String getNombre() {
-        return (this.nombre);
+    public String getEstado() {
+        return (this.estado);
     }
 
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
-    public String getDescripcion() {
-        return (this.descripcion);
+    public String getPais() {
+        return (this.pais);
     }
 
 
     public void reset(ActionMapping mapping,
                       HttpServletRequest request) {
-        nombre=null;
-        descripcion=null;
+        estado=null;
+        pais=null;
     }
 
 

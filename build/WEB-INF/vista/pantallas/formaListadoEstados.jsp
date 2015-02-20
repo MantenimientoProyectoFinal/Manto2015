@@ -20,10 +20,10 @@
 -->
 </script>
     <br>
-    <font size='5'><fmt:message key="formaListadoEstados.titulo" /></font>
+    <font size='10'><fmt:message key="formaListadoEstados.titulo" /></font>
     <div class="table" style="width:100%" >
         <div class="tr">
-            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px;">
+            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px; font-size:18px;">
                 <a href="solicitarRegistroEstado.do" class="HipervinculoAdmon boton">Agregar nuevo estado...</a>
             </div>
         </div>
@@ -32,23 +32,23 @@
                <html:errors />
             </div>
         </div>
-        <div class="tr" style="background:#CCCCCC;">
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoEstados.etiqueta.estado" /></b></div>
-         <div class="td" style="width:58%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoEstados.etiqueta.pais" /></b></div>
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoEstados.etiqueta.administracion" /></b></div>
+        <div class="tr" style="background: transparent; border: 0px; clear: 0; font-size: 25px;">
+         <div class="td" style="width:15%"><b><fmt:message key="formaListadoEstados.etiqueta.estado" /></b></div>
+         <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoEstados.etiqueta.pais" /></b></div>
+         <div class="td" style="width:15%"><b><fmt:message key="formaListadoEstados.etiqueta.administracion" /></b></div>
         </div>
         <c:forEach var="estado" items="${formaListadoEstados.estados}">
             <div class="tr">
-                <div class="td" align="left" style="width:20%"><c:out value="${estado.estado}"/></div>
-                <div class="td" align="left" style="width:58%"><c:out value="${estado.pais}"/></div>
-                <div class="td" align="left" style="width:20%">
+                <div class="td" align="left" style="width:15%"><c:out value="${estado.estado}"/></div>
+                <div class="td" align="left" style="width:15%"><c:out value="${estado.pais}"/></div>
+                <div class="td" align="left" style="width:25%">
                     <a href='solicitarModificarEstado.do?id=<c:out value="${estado.id}"/>'
-					   class="HipervinculoAdmon">
+					   class="HipervinculoAdmon" style="color: green;">
                         <fmt:message key="formaListadoEstados.etiqueta.modificar" />
                     </a>
                     <a href='procesarEliminarEstado.do?id=<c:out value="${estado.id}"/>'
 					   onClick="javascript: return EliminarEstado('<c:out value="${estado.estado}"/>')"
-					   class="HipervinculoAdmon">
+					   class="HipervinculoAdmon" style="color: red;">
                         <fmt:message key="formaListadoEstados.etiqueta.eliminar" />
                     </a>
                 </div>
