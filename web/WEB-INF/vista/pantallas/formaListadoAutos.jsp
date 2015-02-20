@@ -8,7 +8,7 @@
   }
   
   .HipervinculoAdmon:hover{
-    color:#006666;
+    color: red;
 	text-decoration:underline;
   }
 </style>
@@ -33,21 +33,27 @@
             </div>
         </div>
         <div class="tr" style="background:#CCCCCC;">
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoAutos.etiqueta.nombre" /></b></div>
-         <div class="td" style="width:58%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.descripcion" /></b></div>
-         <div class="td" style="width:20%"><b><fmt:message key="formaListadoAutos.etiqueta.administracion" /></b></div>
+         <div class="td" style="width:15%"><b><fmt:message key="formaListadoAutos.etiqueta.marca" /></b></div>
+         <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.color" /></b></div>
+		 
+		 <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.placas" /></b></div>
+         <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.propietario" /></b></div>
+
+         <div class="td" style="width:25%"><b><fmt:message key="formaListadoAutos.etiqueta.administracion" /></b></div>
         </div>
         <c:forEach var="auto" items="${formaListadoAutos.autos}">
             <div class="tr">
-                <div class="td" align="left" style="width:20%"><c:out value="${auto.nombre}"/></div>
-                <div class="td" align="left" style="width:58%"><c:out value="${auto.descripcion}"/></div>
-                <div class="td" align="left" style="width:20%">
+                <div class="td" align="left" style="width:15%"><c:out value="${auto.marca}"/></div>
+                <div class="td" align="left" style="width:15%"><c:out value="${auto.color}"/></div>
+				<div class="td" align="left" style="width:15%"><c:out value="${auto.placas}"/></div>
+                <div class="td" align="left" style="width:15%"><c:out value="${auto.propietario}"/></div>
+                <div class="td" align="left" style="width:25%">
                     <a href='solicitarModificarAuto.do?id=<c:out value="${auto.id}"/>'
 					   class="HipervinculoAdmon">
                         <fmt:message key="formaListadoAutos.etiqueta.modificar" />
                     </a>
                     <a href='procesarEliminarAuto.do?id=<c:out value="${auto.id}"/>'
-					   onClick="javascript: return EliminarAuto('<c:out value="${auto.nombre}"/>')"
+					   onClick="javascript: return EliminarAuto('<c:out value="${auto.placas}"/>')"
 					   class="HipervinculoAdmon">
                         <fmt:message key="formaListadoAutos.etiqueta.eliminar" />
                     </a>

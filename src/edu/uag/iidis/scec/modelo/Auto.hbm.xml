@@ -18,6 +18,22 @@
             type="java.lang.String"
             not-null="true"
             unique="true" />        
+			
+		<property name="color"
+            type="java.lang.String"
+            not-null="true"
+            unique="true" />    
+			
+		<property name="placas"
+            type="java.lang.String"
+            not-null="true"
+            unique="true" /> 
+			
+		<property name="propietario"
+            type="java.lang.String"
+            not-null="true"
+            unique="true" /> 
+			
 
     </class>
 

@@ -51,7 +51,7 @@
         <mapping resource="edu/uag/iidis/scec/modelo/Ciudad.hbm.xml"/>
         <mapping resource="edu/uag/iidis/scec/modelo/Gente.hbm.xml"/>
         <mapping resource="edu/uag/iidis/scec/modelo/Login.hbm.xml"/>
-		 <mapping resource="edu/uag/iidis/scec/modelo/Auto.hbm.xml"/>
+		<mapping resource="edu/uag/iidis/scec/modelo/Auto.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>
