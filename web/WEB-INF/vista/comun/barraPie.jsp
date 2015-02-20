@@ -9,9 +9,9 @@
 		Copyright © 23 enero de 2015.<br />
 		Todos los derechos reservados.<br /><br />
 		<b>Equipo conformado por:</b><br />
-		<li>Rodrigo Gámez Mandujano</li>
-		<li>María Guadalupe Morales</li>
-		<li>Samantha Trinidad Maureen Aguila Aguilar</li>
+		<li>Pedro Rogelio Barrientos Rosas</li>
+		<li>Luis Angel Morales Lopez</li>
+		<li>Ada Jazmin Moreno Trujillo</li>
 		
 		
 	</section>

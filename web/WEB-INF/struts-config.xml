@@ -32,11 +32,18 @@
         <form-bean name="formaEliminarRol"
                    type="edu.uag.iidis.scec.vista.FormaEliminarRol">
         </form-bean>
+		<form-bean name="formaEliminarAuto"
+                   type="edu.uag.iidis.scec.vista.FormaEliminarAuto">
+        </form-bean>
+		
         <form-bean name="formaNuevoEstado"
                    type="edu.uag.iidis.scec.vista.FormaNuevoEstado">
         </form-bean>
         <form-bean name="formaListadoEstados"
                    type="edu.uag.iidis.scec.vista.FormaListadoEstados">
+        </form-bean>
+		<form-bean name="formaNuevoAuto"
+                   type="edu.uag.iidis.scec.vista.FormaNuevoAuto">
         </form-bean>
 		<form-bean name="formaListadoAutos"
                    type="edu.uag.iidis.scec.vista.FormaListadoAutos">
@@ -113,6 +120,17 @@
                 validate="false">
             <forward name="exito" path="/solicitarListarRoles.do" redirect="true"/>
         </action>
+		
+		<action path="/procesarEliminarAuto"
+                type="edu.uag.iidis.scec.control.MCUEliminarAuto"
+                parameter="procesarEliminarAuto"
+                name="formaEliminarAuto"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/solicitarListarAutos.do" redirect="true"/>
+        </action>
+		
+		
         <action path="/solicitarRegistroRol"
                 type="edu.uag.iidis.scec.control.MCURegistrarRol"
                 parameter="solicitarRegistroRol"
@@ -121,6 +139,16 @@
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoRol.jsp"/>
         </action>
+		
+		<action path="/solicitarRegistroAuto"
+                type="edu.uag.iidis.scec.control.MCURegistrarAuto"
+                parameter="solicitarRegistroAuto"
+                name="formaNuevoAuto"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoAuto.jsp"/>
+        </action>
+		
         <action path="/solicitarListarEstados"
                 type="edu.uag.iidis.scec.control.MCUListarEstados"
                 parameter="solicitarListarEstados"
@@ -203,6 +231,18 @@
             <forward name="cancelar" path="/solicitarListarRoles.do" redirect="true"/>
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
             <forward name="volver" path="solicitarRegistroRol.do" redirect="true"/>
+       </action>
+	   
+	   <action path="/procesarRegistroAuto"
+                type="edu.uag.iidis.scec.control.MCURegistrarAuto"
+                parameter="procesarRegistroAuto"
+                name="formaNuevoAuto"
+                scope="request"
+                validate="true"
+                input="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoAuto.jsp" >
+            <forward name="cancelar" path="/solicitarListarAutos.do" redirect="true"/>
+            <forward name="exito" path="/solicitarListarAutos.do"/>
+            <forward name="volver" path="solicitarRegistroAuto.do" redirect="true"/>
        </action>
        <action path="/procesarRegistroEstado"
                 type="edu.uag.iidis.scec.control.MCURegistrarEstado"

@@ -8,7 +8,7 @@
   }
   
   .HipervinculoAdmon:hover{
-    color: red;
+    color:#006666;
 	text-decoration:underline;
   }
 </style>
@@ -35,10 +35,8 @@
         <div class="tr" style="background:#CCCCCC;">
          <div class="td" style="width:15%"><b><fmt:message key="formaListadoAutos.etiqueta.marca" /></b></div>
          <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.color" /></b></div>
-		 
 		 <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.placas" /></b></div>
-         <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.propietario" /></b></div>
-
+		 <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.propietario" /></b></div>
          <div class="td" style="width:25%"><b><fmt:message key="formaListadoAutos.etiqueta.administracion" /></b></div>
         </div>
         <c:forEach var="auto" items="${formaListadoAutos.autos}">
@@ -46,7 +44,7 @@
                 <div class="td" align="left" style="width:15%"><c:out value="${auto.marca}"/></div>
                 <div class="td" align="left" style="width:15%"><c:out value="${auto.color}"/></div>
 				<div class="td" align="left" style="width:15%"><c:out value="${auto.placas}"/></div>
-                <div class="td" align="left" style="width:15%"><c:out value="${auto.propietario}"/></div>
+				<div class="td" align="left" style="width:15%"><c:out value="${auto.propietario}"/></div>
                 <div class="td" align="left" style="width:25%">
                     <a href='solicitarModificarAuto.do?id=<c:out value="${auto.id}"/>'
 					   class="HipervinculoAdmon">
