@@ -14,7 +14,7 @@
             </generator>
         </id>
 
-        <property name="nombre"
+        <property name="marca"
             type="java.lang.String"
             not-null="true"
             unique="true" />        
