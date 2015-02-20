@@ -93,16 +93,29 @@ body {
 	font-family:Verdana, Arial;
 	font-size: 16px;
 }
+a:link   
+{   
+ text-decoration:none;   
+}   
 .barramenu2 {
 	padding: 10px;
-	border: 1px solid #777;
-	background: #d1d1d1;
+	background: transparent;
 	margin-top: 20px;
+	text-align: center;
+	width: 700x;
+	border: 0px;
+	font-family: Haettenschweiler;
 }
 .barramenu2 span {
 	border-right: 1px solid #777;
 	padding: 0 10px;
+	font-size: 47px;
 }
+
+.barramenu2 span:hover{
+    color:#006666;
+	font-size: 57px;
+  }
 .inicio {
 	padding: 50px;
 	margin-left: auto;
@@ -169,11 +182,44 @@ body {
 .td{
   float:left;/*fix for  buggy browsers*/
   display:table-column;         
-  width:200px;         
+  width:200px;    
+ 
+  margin-left:10px;  
+}
+
+.td input[type=text] {
+width:290px;    
+height: 34px;
+font-size:22px;
+box-shadow: 5px 5px 5px #888888;
+}
+
+.td input[type=submit] {
+width:290px;    
+height: 34px;
+font-size:22px;
+box-shadow: 5px 5px 5px #888888;
+margin-top:20px;
+background:transparent;
+border:0px;
+margin-left: 220px;
+cursor: pointer;
+}
+
+.td input[type=button] {
+width:290px;    
+height: 34px;
+font-size:22px;
+box-shadow: 5px 5px 5px #888888;
+margin-top:20px;
+background:transparent;
+border:0px;
+margin-left: 220px;
+cursor: pointer;
 }
 .form-login input {
 	font-size: 16px;
-	
+	 
 	width: 400px;
 	padding: 3px 6px;
 	margin-bottom: 5px;

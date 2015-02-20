@@ -95,13 +95,17 @@ body {
 }
 .barramenu2 {
 	padding: 10px;
-	border: 1px solid #777;
-	background: #d1d1d1;
+	
+	background: transparent;
 	margin-top: 20px;
+	margin-left: 300px;
+	width: 700x;
+	border: 0px
 }
 .barramenu2 span {
 	border-right: 1px solid #777;
 	padding: 0 10px;
+	font-size: 22px;
 }
 .inicio {
 	padding: 50px;
