@@ -20,10 +20,10 @@
 -->
 </script>
     <br>
-    <font size='5'><fmt:message key="formaListadoAutos.titulo" /></font>
+    <font size='10'><fmt:message key="formaListadoAutos.titulo" /></font>
     <div class="table" style="width:100%" >
         <div class="tr">
-            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px;">
+            <div class="td" colspan="4" style="padding-top:25px; padding-bottom:25px; font-size:18px;"">
                 <a href="solicitarRegistroAuto.do" class="HipervinculoAdmon boton">Agregar nuevo auto...</a>
             </div>
         </div>
@@ -32,11 +32,11 @@
                <html:errors />
             </div>
         </div>
-        <div class="tr" style="background:#CCCCCC;">
+        <div class="tr"  style="background: transparent; border: 0px; clear: 0; font-size: 25px;">
          <div class="td" style="width:15%"><b><fmt:message key="formaListadoAutos.etiqueta.marca" /></b></div>
          <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.color" /></b></div>
 		 <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.placas" /></b></div>
-		 <div class="td" style="width:15%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.propietario" /></b></div>
+		 <div class="td" style="width:20%; border-right-style:solid; border-left-style:solid; border-width:1px; border-color:#000000;"><b><fmt:message key="formaListadoAutos.etiqueta.propietario" /></b></div>
          <div class="td" style="width:25%"><b><fmt:message key="formaListadoAutos.etiqueta.administracion" /></b></div>
         </div>
         <c:forEach var="auto" items="${formaListadoAutos.autos}">

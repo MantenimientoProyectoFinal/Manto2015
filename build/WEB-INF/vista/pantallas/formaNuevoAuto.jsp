@@ -4,7 +4,7 @@
 
 
     <br>
-    <font size='5'><fmt:message key="formaNuevoAuto.titulo" /></font>
+    <font size='10'><fmt:message key="formaNuevoAuto.titulo" /></font>
 
     <form id="forma" action="procesarRegistroAuto.do" method="post">
         <div class="table">
